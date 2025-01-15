@@ -150,10 +150,10 @@ body > *, .title > *, .navBar > *{
 }
 
 @keyframes textCursor{
-    from to{
+    from{
         border-right-color: white;
     }
-    50%{
+    to{
         border-right-color: transparent;
     }
 }

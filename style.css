@@ -56,6 +56,8 @@ p{
 }
 
 .name{
+    margin: 0;
+    padding: 0;
     font-family:Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     font-size: 5rem;
@@ -63,12 +65,10 @@ p{
     text-shadow: 0 0 30px black;
     overflow: hidden;
     white-space: nowrap;
+    border-right: solid white;
 
-    text-size-adjust: auto;
 
-    animation-name: textSlide;
-    animation-duration: 4s;
-    animation-timing-function: steps(26,end);
+    animation: textSlide 3s steps(26,end), textCursor 0.5s steps(26,end) infinite normal;
 }
 
 .title::before, .navBar::before{
@@ -93,7 +93,7 @@ body > *, .title > *, .navBar > *{
     position: absolute;
     bottom: 15%;
 
-    animation: appear 2s ease-in , swipeUp 1s ease-in-out 3s infinite alternate;
+    animation: appear 2s ease-in , swipeUp 1s ease-in-out 2.5s infinite alternate;
 
     display: flex;
     flex-direction: column;
@@ -139,17 +139,22 @@ body > *, .title > *, .navBar > *{
 
 
 
-
-
-
-
 @keyframes textSlide{
     from{
         width: 0;
     }
-
     to{
-        width: 100%;
+        width: 70%;
+    }
+
+}
+
+@keyframes textCursor{
+    from to{
+        border-right-color: white;
+    }
+    50%{
+        border-right-color: transparent;
     }
 }
 

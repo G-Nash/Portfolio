@@ -92,7 +92,7 @@ body > *, .title > *, .navBar > *{
     position: absolute;
     bottom: 15%;
 
-    animation: appear 2s ease-in , swipeUp 1s ease-in-out 2.5s infinite alternate;
+    animation: appear 2s ease-in , swipeUp 1s ease-in-out 2s infinite alternate;
 
     display: flex;
     flex-direction: column;

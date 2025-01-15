@@ -64,6 +64,8 @@ p{
     overflow: hidden;
     white-space: nowrap;
 
+    text-size-adjust: auto;
+
     animation-name: textSlide;
     animation-duration: 4s;
     animation-timing-function: steps(26,end);
@@ -91,7 +93,7 @@ body > *, .title > *, .navBar > *{
     position: absolute;
     bottom: 15%;
 
-    animation: appear 3s ease-in , swipeUp 1s ease-in-out 2s infinite alternate;
+    animation: appear 2s ease-in , swipeUp 1s ease-in-out 3s infinite alternate;
 
     display: flex;
     flex-direction: column;
@@ -167,6 +169,30 @@ body > *, .title > *, .navBar > *{
     to{
         opacity: 1;
     }
+}
+
+
+
+@media screen and (max-width:750px) {
+    .name{
+        font-size: 2rem;
+        white-space: no-wrap;
+    }
+
+    .navLeft{
+        margin-left: 5%;
+    }
+
+    .navRight{
+        display: none;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .name{
+        text-wrap: wrap;
+    }  
+    
 }
 
 

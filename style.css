@@ -89,12 +89,7 @@ body > *, .title > *, .navBar > *{
     position: absolute;
     bottom: 15%;
 
-    animation: appear, swipeUp;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-direction:alternate;
-    animation-timing-function: ease-in-out;
-    animation-play-state: running;
+    animation: appear 2s ease-in , swipeUp 1s ease-in-out 1s infinite alternate;
 
     display: flex;
     flex-direction: column;
@@ -147,10 +142,10 @@ body > *, .title > *, .navBar > *{
 
 @keyframes swipeUp{
     from{
-        transform: translateY(25px);
+        transform: translateY(0px);
     }
     to{
-        transform: translateY(0px);
+        transform: translateY(25px);
     }
 }
 

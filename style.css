@@ -106,6 +106,8 @@ body > *, .title > *, .navBar > *{
 
 
 .navBar{
+    display: hidden;
+    opacity: 0;
     min-height: 10vh;
     width: 100%;
     display: flex;
@@ -117,6 +119,8 @@ body > *, .title > *, .navBar > *{
 
     position: sticky;
     top: 0;
+
+    transition: visibility 0s, opacity 0.5s ease-in-out;
 }
 
 

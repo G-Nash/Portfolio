@@ -147,6 +147,7 @@ body > *, .title > *, .navBar > *{
 
 
 
+
 @keyframes textSlide{
     from{
         width: 0;
@@ -206,10 +207,4 @@ body > *, .title > *, .navBar > *{
         text-wrap: wrap;
     }  
     
-}
-
-
-.test{
-    height: 100vh;
-    width: 100vw;
 }

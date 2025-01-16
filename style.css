@@ -296,6 +296,10 @@ body > *, .title > *, .navBar > *, #intro > *, .education>*{
 
 
 @media screen and (max-width:750px) {
+    .title{
+        background-image: url(./images/mobile_bg.png);
+    }
+    
     .name{
         font-size: 2rem;
         white-space: no-wrap;
@@ -311,6 +315,10 @@ body > *, .title > *, .navBar > *, #intro > *, .education>*{
 }
 
 @media screen and (max-width:350px) {
+    .title{
+        background-image: url(./images/mobile_bg.png);
+    }
+
     .name{
         text-wrap: wrap;
     }  

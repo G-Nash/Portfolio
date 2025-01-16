@@ -87,7 +87,7 @@ p{
 }
 
 .title::before{
-    background-color:rgba(255, 0, 68, 0.01);
+    background-color:rgba(125, 0, 0, 0.15);
 }
 
 body > *, .title > *, .navBar > *, #intro > *{

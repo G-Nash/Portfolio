@@ -5,6 +5,10 @@ html, body{
     scroll-behavior:smooth;
 }
 
+:root{
+    --primary: rgba(0, 0, 0, 0.6)
+}
+
 /* *{
     border: solid white;
 } */
@@ -17,8 +21,7 @@ a{
 
 
 body{
-    /* background-image: url(./images/bgi.jpg); */
-    background-color: black !important;
+    background-image: linear-gradient(var(--primary),var(--primary)), url(./images/bgi.jpg);
     background-position:center;
     background-size:cover;
     background-repeat:no-repeat;
@@ -71,7 +74,7 @@ p{
     animation: textSlide 4s steps(26,end), textCursor 0.5s steps(26,end) infinite normal;
 }
 
-.title::before, #intro::before, .education::before{
+.title::before{
     content: '';
     position: absolute;
     top: 0;
@@ -82,11 +85,7 @@ p{
     z-index: 1;
 }
 
-/* .navBar::before{
-    background-color:rgb(64, 0, 128, 0.7);
-} */
-
-body > *, .title > *, .navBar > *, #intro > *, .education>*{
+.title > *{
     position: relative;
     z-index: 2;
 }
@@ -154,13 +153,6 @@ body > *, .title > *, .navBar > *, #intro > *, .education>*{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-
-    background-image: url(./images/bgi.jpg);
-    background-position:center;
-    background-size:cover;
-    background-repeat:no-repeat;
-    background-attachment: fixed;
 }
 
 .introText{
@@ -189,14 +181,10 @@ body > *, .title > *, .navBar > *, #intro > *, .education>*{
 }
 
 .education{
-    padding-top: 11vh; /* Adjust this value to the height of your navbar */
-    margin-top: -11vh; /* Same value as padding-top */
+    padding-top: 4vh; /* Adjust this value to the height of your navbar */
+    margin-top: -4vh; /* Same value as padding-top */
 
-    background-image: url(./images/bgi.jpg);
-    background-position:center;
-    background-size:cover;
-    background-repeat:no-repeat;
-    background-attachment: fixed;
+    margin-bottom: 2rem;
 
     height: 100vh;
     width: 100vw;
@@ -218,7 +206,6 @@ body > *, .title > *, .navBar > *, #intro > *, .education>*{
     justify-content: space-evenly;
     height: 33%;
     text-align: center;
-    /* border-bottom: solid; */
 }
 
 .educationDivInside:last-child{
@@ -232,10 +219,11 @@ body > *, .title > *, .navBar > *, #intro > *, .education>*{
 }
 
 .educationContent{
+    background-color: transparent;
+    color: white;
     font-family: monospace;
     font-size: 1rem;
     border: solid white;
-    /* padding: 3rem; */
     width: 60%;
     height: 80%;
     text-align: center;
@@ -252,6 +240,20 @@ body > *, .title > *, .navBar > *, #intro > *, .education>*{
     transform: scale(1.05);
     transition: color 0.3s ease-in-out, transform 0.1s ease-in-out;
 }
+
+#tileTitle{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 2rem;
+}
+
+.projects{
+    height: 100vh;
+    width: 100vw;
+}
+
 
 
 
